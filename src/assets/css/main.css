@@ -1,0 +1,11 @@
+/* GLOBAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+#app {
+  background-image: url('~@/assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  font-family: 'Shippori Mincho', serif;
+}
