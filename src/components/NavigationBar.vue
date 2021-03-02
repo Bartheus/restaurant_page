@@ -19,8 +19,8 @@
       <span class="mr-2">About</span>
       <!-- <v-icon>mdi-information-outline</v-icon> -->
     </v-btn>
-    <v-btn href="/Order" to="/order" text>
-      <span class="mr-2">Order</span>
+    <v-btn href="/Menu" to="/menu" text>
+      <span class="mr-2">Menu</span>
       <!-- <v-icon>mdi-food</v-icon> -->
     </v-btn>
     <v-btn href="/Gallery" to="/gallery" text>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Order from '../views/Order.vue'
+import Menu from '../views/Menu.vue'
 import Gallery from '../views/Gallery.vue'
 
 Vue.use(VueRouter)
@@ -24,9 +24,9 @@ const routes = [
     //   import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: '/order',
-    name: 'Order',
-    component: Order
+    path: '/menu',
+    name: 'Menu',
+    component: Menu
   },
   {
     path: '/gallery',
