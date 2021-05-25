@@ -1,44 +1,45 @@
 <template>
-  <div class="container">
-    <div class="adress">
-      58 8th Lane Los Angeles, CA 90044
-    </div>
-    <div class="quote">
-      <h1>A little slice of heaven</h1>
-      <h4 class="under-quote">
-        We all need to make time for a burger once in a while.
-      </h4>
-    </div>
-    <v-btn class="ma-7" outlined small color="#998100">
-      Learn More
-    </v-btn>
-  </div>
+  <section class="home-section">
+    <v-row justify="center">
+      <v-col align="center" class="main-content ml-4">
+        <div class="adress">{{ adress }}</div>
+        <div class="quote">{{ title }}</div>
+        <div class="sub-quote">{{ subtitle }}</div>
+        <v-btn outlined color="#998100" to="/about">Learn More</v-btn>
+      </v-col>
+    </v-row>
+  </section>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      adress: '58 8th Lane Los Angeles, CA 90044',
+      title: 'A little slice of heaven',
+      subtitle: 'We all need to have time for a burger once in a while.'
+    }
+  }
+}
 </script>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Ballet&family=Dancing+Script&display=swap');
-.container {
-  position: relative;
-  background: #000;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 45px 35px 25px 35px;
-  margin: 0 auto;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
+.home-section {
+  font-size: 1.6rem;
+  min-height: 100%;
 }
-.quote {
-  font-family: 'Dancing Script', cursive;
-  letter-spacing: 0.5rem;
-}
-.under-quote {
-  letter-spacing: 2px;
-  margin-top: 7.5px;
+.main-content {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  transform: translate(-50%, -50%);
 }
 .adress {
-  margin-bottom: 7.5px;
+  font-size: 18px;
   color: #998100;
+}
+.quote {
+  font-size: 30px;
+}
+.sub-quote {
+  font-size: 18px;
 }
 </style>
